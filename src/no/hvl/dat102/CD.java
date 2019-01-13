@@ -8,14 +8,16 @@ public class CD {
 	private String tittel;
 	private int aar;
 	private Sjanger sjanger;
+	private String plateselskap;
 	
 	//Konstruktør
-	public CD(int nummer, String artist, String tittel, int aar, Sjanger sjanger) {
+	public CD(int nummer, String artist, String tittel, int aar, Sjanger sjanger, String plateselskap) {
 		this.nummer = nummer;
 		this.artist = artist;
 		this.tittel = tittel;
 		this.aar = aar;
 		this.sjanger = sjanger;
+		this.plateselskap = plateselskap;
 	}
 
 	// Getters/Setters
@@ -57,6 +59,14 @@ public class CD {
 
 	public void setSjanger(Sjanger sjanger) {
 		this.sjanger = sjanger;
+	}
+	
+	public String getPlateselskap() {
+		return plateselskap;
+	}
+	
+	public void setPlateselskap(String plateselskap) {
+		this.plateselskap = plateselskap;
 	}
 	
 }

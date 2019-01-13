@@ -1,5 +1,20 @@
 package no.hvl.dat102;
 
+import no.hvl.dat102.adt.CDArkivADT;
+
 public class Meny {
-//TODO Fullfør denne.
+
+	private Tekstgrensesnitt tekstgr;
+	private CDArkivADT cda;
+	
+	public Meny(CDArkivADT cda) {
+		tekstgr = new Tekstgrensesnitt();
+		this.cda = cda;
+	}
+	
+	public void start() {
+		
+	}
+	
+	
 }
